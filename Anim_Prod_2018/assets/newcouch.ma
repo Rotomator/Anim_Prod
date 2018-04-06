@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: newcouch.ma
-//Last modified: Tue, Apr 03, 2018 01:29:05 PM
+//Last modified: Fri, Apr 06, 2018 12:00:56 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "002187C7-4370-B25B-25EB-06B987CDEA83";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -34.337979572659137 79.789969282429098 267.09278703527667 ;
-	setAttr ".r" -type "double3" -14.70526638379572 -1097.3999999994874 0 ;
+	setAttr ".t" -type "double3" 109.63359744070071 84.067339525768688 108.7873299810007 ;
+	setAttr ".r" -type "double3" -22.505266383796204 -1036.99999999948 2.1744298787637821e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A3A5A24F-468B-4ED7-E539-A38C2B0CBE68";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 244.21575897878762;
+	setAttr ".coi" 128.33197450468245;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -7705,19 +7705,19 @@ createNode mesh -n "pCube14Shape" -p "pCube14";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "74EC3F68-46B2-5FC7-CBF7-8AB6FEF354B3";
+	rename -uid "4E833190-43D8-8840-D8E3-4A84A70506B4";
 	setAttr -s 5 ".lnk";
 	setAttr -s 5 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "A2A4D01C-4DF2-192F-CAAE-71B8FD039B29";
+	rename -uid "9A71DCDB-43E9-9253-CA7F-92A898C5C9EB";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "7D535416-466E-2789-9F7E-E1AE81B9BD3B";
+	rename -uid "F8B1D942-400E-2E47-94AF-DC965536C84B";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "983A0B7E-4688-2526-C7B6-9D8AE1616DEB";
+	rename -uid "8B3946DB-4CDD-8AFA-6A97-AA8F4EE12E6C";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "619694C2-4D58-5450-1F70-72A64567336B";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "9E1D7F36-4154-975B-AA3D-AC99AE33B7AF";
+	rename -uid "F516ED22-4A23-1BFA-7CD7-A6ADAD2433D9";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "4846208D-4990-17CD-210C-3A916A113AFD";
 	setAttr ".g" yes;
@@ -7826,7 +7826,7 @@ createNode groupId -n "groupId3";
 	setAttr ".ihi" 0;
 createNode file -n "file1";
 	rename -uid "8799B62B-4A9E-68E6-855D-B5B0B86E54FD";
-	setAttr ".ftn" -type "string" "C:/Users/seraf/Desktop/AnimationProduction/Anim_Prod_2018/assets/Textures/Adobe_asset_couch/CouchPillowTex_baseColor.png";
+	setAttr ".ftn" -type "string" "C:/Users/seraf/Desktop/AnimationProduction/Anim_Prod_2018/assets/Textures/Adobe_asset_Adobe Standard Material/CouchPillowTex_baseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "place2dTexture1";
 	rename -uid "470709BA-4ADE-547C-F2BF-698D2762E444";
