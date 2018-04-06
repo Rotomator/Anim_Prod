@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: newboxes.ma
-//Last modified: Tue, Apr 03, 2018 01:50:02 PM
+//Last modified: Fri, Apr 06, 2018 01:01:39 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "35E6EAC4-45CF-CFF0-A76F-5F94F53D5BED";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.902811665182693 2.7084054347873661 -24.543299199006476 ;
-	setAttr ".r" -type "double3" 2.6616472628667487 154.59999999999994 0 ;
+	setAttr ".t" -type "double3" -16.248263847805603 14.803484921699578 -8.7138560173183315 ;
+	setAttr ".r" -type "double3" -32.138352737131186 242.19999999999663 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C14F4CA3-499C-A221-1D77-7783F25540F2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 27.652157538128652;
+	setAttr ".coi" 22.314273555004178;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1165,19 +1165,19 @@ createNode mesh -n "pCubeShape2" -p "pCube2";
 	setAttr ".dr" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "DC23BDC7-4481-573E-92BD-0F904C876F28";
+	rename -uid "134696B5-40A0-83C6-A3B4-5388DD15CEC2";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8980CDE3-4627-5230-AC2A-118400BF981C";
+	rename -uid "28C782CF-41ED-DEFA-6CD6-438B43047BB1";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "39C20301-48B8-8BD6-3C9B-D7975EF7A23C";
+	rename -uid "8B5D1D00-4FC9-69A9-0EB5-4D95DB9C5B7C";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "EFCB5E8E-4A2E-5B09-C20F-4C93FF955B86";
+	rename -uid "45547A77-4162-FD96-80F5-2FA8A6A3061A";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "6888B45C-438B-A373-6277-70874803D77E";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "F7EFCFFB-485B-0AD3-B84E-6B88A15A48AF";
+	rename -uid "39466D28-4EAC-E4FD-9DA4-78B0A3F6BA53";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "69B114FA-40DD-42AD-88F9-E9A4DAFBDC6A";
 	setAttr ".g" yes;
@@ -1249,7 +1249,7 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[1].nvs" 1923;
 createNode file -n "file1";
 	rename -uid "EEB40AF7-428B-B5C8-EE09-FE90735523B6";
-	setAttr ".ftn" -type "string" "C:/Users/seraf/Desktop/AnimationProduction/Anim_Prod_2018/assets/Textures/Adobe_asset_Adobe Standard Material/CardboardBoxTex_1_baseColor.png";
+	setAttr ".ftn" -type "string" "C:/Users/seraf/Desktop/AnimationProduction/Anim_Prod_2018/assets/Textures/Adobe_asset_Adobe Standard Material/CardboardBoxTex_2_baseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "place2dTexture1";
 	rename -uid "F1BED27F-4CBB-AF4F-7546-ECAEB1FB1435";
@@ -1283,8 +1283,6 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
