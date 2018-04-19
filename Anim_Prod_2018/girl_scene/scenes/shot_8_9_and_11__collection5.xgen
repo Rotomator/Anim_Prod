@@ -1,8 +1,8 @@
 # XGen Palette File
 #
 # Version:  C:/Program Files/Autodesk/Maya2018/plug-ins/xgen/
-# Author:   grigg
-# Date:     Sun Apr 15 04:22:31 2018
+# Author:   seraf
+# Date:     Thu Apr 19 12:08:48 2018
 
 FileVersion 18
 
@@ -10,7 +10,7 @@ Palette
 	name			collection5
 	parent			
 	xgDataPath		${PROJECT}xgen/collections/collection5
-	xgProjectPath		C:/Users/grigg/Documents/maya/projects/man/
+	xgProjectPath		C:/Users/seraf/Documents/maya/projects/RoboCooking/
 	xgDogTag		
 	endAttrs
 
@@ -29,7 +29,7 @@ Description
 	groom			
 	descriptionId		0
 	xgDataPath		${PROJECT}xgen/collections/collection5/
-	xgProjectPath		C:/Users/grigg/Documents/maya/projects/man/
+	xgProjectPath		C:/Users/seraf/Documents/maya/projects/RoboCooking/
 	endAttrs
 
 RendermanRenderer
