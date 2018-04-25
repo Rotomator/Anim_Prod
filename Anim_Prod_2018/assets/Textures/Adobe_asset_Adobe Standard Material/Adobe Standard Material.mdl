@@ -17,10 +17,10 @@ import ::tex::wrap_mode;
 import ::state::normal;
 
 
-export material MATERIAL_FLOORTEX1(*)
+export material MATERIAL_ARMS_TEX(*)
 = ::adobe::mtl::standard(
 	baseColor: ::base::file_texture(
-	texture: texture_2d("FloorTex1_baseColor.png", ::tex::gamma_srgb),
+	texture: texture_2d("Arms_Tex_baseColor.png", ::tex::gamma_srgb),
 	color_offset: color(0.f, 0.f, 0.f),
 	color_scale: color(1.f, 1.f, 1.f),
 	mono_source: ::base::mono_average,
@@ -35,7 +35,7 @@ export material MATERIAL_FLOORTEX1(*)
 	clip: false
 ).tint,
 roughness: ::base::file_texture(
-	texture: texture_2d("FloorTex1_roughness.png", ::tex::gamma_linear),
+	texture: texture_2d("Arms_Tex_roughness.png", ::tex::gamma_linear),
 	color_offset: color(0.f, 0.f, 0.f),
 	color_scale: color(1.f, 1.f, 1.f),
 	mono_source: ::base::mono_average,
@@ -50,7 +50,7 @@ roughness: ::base::file_texture(
 	clip: false
 ).mono,
 metallic: ::base::file_texture(
-	texture: texture_2d("FloorTex1_metallic.png", ::tex::gamma_linear),
+	texture: texture_2d("Arms_Tex_metallic.png", ::tex::gamma_linear),
 	color_offset: color(0.f, 0.f, 0.f),
 	color_scale: color(1.f, 1.f, 1.f),
 	mono_source: ::base::mono_average,
@@ -65,7 +65,7 @@ metallic: ::base::file_texture(
 	clip: false
 ).mono,
 opacity: ::base::file_texture(
-	texture: texture_2d("FloorTex1_opacity.png", ::tex::gamma_linear),
+	texture: texture_2d("Arms_Tex_opacity.png", ::tex::gamma_linear),
 	color_offset: color(0.f, 0.f, 0.f),
 	color_scale: color(1.f, 1.f, 1.f),
 	mono_source: ::base::mono_average,
@@ -80,7 +80,7 @@ opacity: ::base::file_texture(
 	clip: false
 ).mono,
 glow: ::base::file_texture(
-	texture: texture_2d("FloorTex1_glow.png", ::tex::gamma_srgb),
+	texture: texture_2d("Arms_Tex_glow.png", ::tex::gamma_srgb),
 	color_offset: color(0.f, 0.f, 0.f),
 	color_scale: color(1.f, 1.f, 1.f),
 	mono_source: ::base::mono_average,
@@ -95,7 +95,7 @@ glow: ::base::file_texture(
 	clip: false
 ).mono,
 normal: ::base::tangent_space_normal_texture(
-	texture: texture_2d("FloorTex1_normal.png", ::tex::gamma_linear),
+	texture: texture_2d("Arms_Tex_normal.png", ::tex::gamma_linear),
 	factor: 1.f,
 	flip_tangent_u: false,
 	flip_tangent_v: false,
@@ -114,10 +114,10 @@ normal: ::base::tangent_space_normal_texture(
 );
 
 
-export material MATERIAL_FLOORTEX2(*)
+export material MATERIAL_BEANIE_TEX(*)
 = ::adobe::mtl::standard(
 	baseColor: ::base::file_texture(
-	texture: texture_2d("FloorTex2_baseColor.png", ::tex::gamma_srgb),
+	texture: texture_2d("Beanie_Tex_baseColor.png", ::tex::gamma_srgb),
 	color_offset: color(0.f, 0.f, 0.f),
 	color_scale: color(1.f, 1.f, 1.f),
 	mono_source: ::base::mono_average,
@@ -132,7 +132,7 @@ export material MATERIAL_FLOORTEX2(*)
 	clip: false
 ).tint,
 roughness: ::base::file_texture(
-	texture: texture_2d("FloorTex2_roughness.png", ::tex::gamma_linear),
+	texture: texture_2d("Beanie_Tex_roughness.png", ::tex::gamma_linear),
 	color_offset: color(0.f, 0.f, 0.f),
 	color_scale: color(1.f, 1.f, 1.f),
 	mono_source: ::base::mono_average,
@@ -147,7 +147,7 @@ roughness: ::base::file_texture(
 	clip: false
 ).mono,
 metallic: ::base::file_texture(
-	texture: texture_2d("FloorTex2_metallic.png", ::tex::gamma_linear),
+	texture: texture_2d("Beanie_Tex_metallic.png", ::tex::gamma_linear),
 	color_offset: color(0.f, 0.f, 0.f),
 	color_scale: color(1.f, 1.f, 1.f),
 	mono_source: ::base::mono_average,
@@ -162,7 +162,7 @@ metallic: ::base::file_texture(
 	clip: false
 ).mono,
 opacity: ::base::file_texture(
-	texture: texture_2d("FloorTex2_opacity.png", ::tex::gamma_linear),
+	texture: texture_2d("Beanie_Tex_opacity.png", ::tex::gamma_linear),
 	color_offset: color(0.f, 0.f, 0.f),
 	color_scale: color(1.f, 1.f, 1.f),
 	mono_source: ::base::mono_average,
@@ -177,7 +177,7 @@ opacity: ::base::file_texture(
 	clip: false
 ).mono,
 glow: ::base::file_texture(
-	texture: texture_2d("FloorTex2_glow.png", ::tex::gamma_srgb),
+	texture: texture_2d("Beanie_Tex_glow.png", ::tex::gamma_srgb),
 	color_offset: color(0.f, 0.f, 0.f),
 	color_scale: color(1.f, 1.f, 1.f),
 	mono_source: ::base::mono_average,
@@ -192,7 +192,7 @@ glow: ::base::file_texture(
 	clip: false
 ).mono,
 normal: ::base::tangent_space_normal_texture(
-	texture: texture_2d("FloorTex2_normal.png", ::tex::gamma_linear),
+	texture: texture_2d("Beanie_Tex_normal.png", ::tex::gamma_linear),
 	factor: 1.f,
 	flip_tangent_u: false,
 	flip_tangent_v: false,
@@ -208,5 +208,344 @@ normal: ::base::tangent_space_normal_texture(
 	scale: 1.f,
 	offset: 1.f
 )
+);
+
+
+export material MATERIAL_EYEBALLS_MAT(*)
+= ::adobe::mtl::standard(
+	baseColor: ::base::file_texture(
+	texture: texture_2d("Eyeballs_Mat_baseColor.png", ::tex::gamma_srgb),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).tint,
+roughness: ::base::file_texture(
+	texture: texture_2d("Eyeballs_Mat_roughness.png", ::tex::gamma_linear),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).mono,
+metallic: ::base::file_texture(
+	texture: texture_2d("Eyeballs_Mat_metallic.png", ::tex::gamma_linear),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).mono,
+opacity: ::base::file_texture(
+	texture: texture_2d("Eyeballs_Mat_opacity.png", ::tex::gamma_linear),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).mono,
+glow: ::base::file_texture(
+	texture: texture_2d("Eyeballs_Mat_glow.png", ::tex::gamma_srgb),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).mono,
+normal: ::base::tangent_space_normal_texture(
+	texture: texture_2d("Eyeballs_Mat_normal.png", ::tex::gamma_linear),
+	factor: 1.f,
+	flip_tangent_u: false,
+	flip_tangent_v: false,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false,
+	scale: 1.f,
+	offset: 1.f
+)
+);
+
+
+export material MATERIAL_EYEBLACK_MAT(*)
+= ::adobe::mtl::standard(
+	baseColor: ::base::file_texture(
+	texture: texture_2d("EyeBlack_Mat_baseColor.png", ::tex::gamma_srgb),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).tint,
+roughness: ::base::file_texture(
+	texture: texture_2d("EyeBlack_Mat_roughness.png", ::tex::gamma_linear),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).mono,
+metallic: ::base::file_texture(
+	texture: texture_2d("EyeBlack_Mat_metallic.png", ::tex::gamma_linear),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).mono,
+opacity: ::base::file_texture(
+	texture: texture_2d("EyeBlack_Mat_opacity.png", ::tex::gamma_linear),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).mono,
+glow: ::base::file_texture(
+	texture: texture_2d("EyeBlack_Mat_glow.png", ::tex::gamma_srgb),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).mono,
+normal: ::base::tangent_space_normal_texture(
+	texture: texture_2d("EyeBlack_Mat_normal.png", ::tex::gamma_linear),
+	factor: 1.f,
+	flip_tangent_u: false,
+	flip_tangent_v: false,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false,
+	scale: 1.f,
+	offset: 1.f
+)
+);
+
+
+export material MATERIAL_EYELID_MAT(*)
+= ::adobe::mtl::standard(
+	baseColor: ::base::file_texture(
+	texture: texture_2d("Eyelid_Mat_baseColor.png", ::tex::gamma_srgb),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).tint,
+roughness: ::base::file_texture(
+	texture: texture_2d("Eyelid_Mat_roughness.png", ::tex::gamma_linear),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).mono,
+metallic: ::base::file_texture(
+	texture: texture_2d("Eyelid_Mat_metallic.png", ::tex::gamma_linear),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).mono,
+opacity: ::base::file_texture(
+	texture: texture_2d("Eyelid_Mat_opacity.png", ::tex::gamma_linear),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).mono,
+glow: ::base::file_texture(
+	texture: texture_2d("Eyelid_Mat_glow.png", ::tex::gamma_srgb),
+	color_offset: color(0.f, 0.f, 0.f),
+	color_scale: color(1.f, 1.f, 1.f),
+	mono_source: ::base::mono_average,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false
+).mono,
+normal: ::base::tangent_space_normal_texture(
+	texture: texture_2d("Eyelid_Mat_normal.png", ::tex::gamma_linear),
+	factor: 1.f,
+	flip_tangent_u: false,
+	flip_tangent_v: false,
+	uvw: ::base::transform_coordinate(
+		::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)),
+		::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))
+	),
+	crop_u: float2(0.f, 1.f),
+	crop_v: float2(0.f, 1.f),
+	wrap_u: ::tex::wrap_repeat,
+	wrap_v: ::tex::wrap_repeat,
+	clip: false,
+	scale: 1.f,
+	offset: 1.f
+)
+);
+
+
+export material MATERIAL_PASTED__SHOECOLOR_MATSG(*)
+= ::adobe::mtl::standard(
+	
+);
+
+
+export material MATERIAL_PASTED__HAIRBROWS_MATSG(*)
+= ::adobe::mtl::standard(
+	
+);
+
+
+export material MATERIAL_INITIALSHADINGGROUP(*)
+= ::adobe::mtl::standard(
+	
+);
+
+
+export material MATERIAL_PASTED__SHIRT_MATSG(*)
+= ::adobe::mtl::standard(
+	
+);
+
+
+export material MATERIAL_PASTED__PANTS_MATSG(*)
+= ::adobe::mtl::standard(
+	
+);
+
+
+export material MATERIAL_PASTED__EARRINGS_MATSG(*)
+= ::adobe::mtl::standard(
+	
+);
+
+
+export material MATERIAL_PASTED__HEADNECKSKIN_MATSG(*)
+= ::adobe::mtl::standard(
+	
+);
+
+
+export material MATERIAL_PASTED__SHOESOLE_MATSG(*)
+= ::adobe::mtl::standard(
+	
 );
 
